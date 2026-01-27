@@ -50,7 +50,7 @@ model  = AutoModelForCausalLM.from_pretrained(
 
 # load LoRA layers
 lora_model = PeftModel.from_pretrained(
-    model,output_dir
+    model,repo_id
 )
 
 lora_model.eval()

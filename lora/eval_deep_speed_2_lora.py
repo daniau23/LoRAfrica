@@ -28,7 +28,7 @@ if int(os.environ.get("RANK", 0)) == 0:
     wandb.init(project="phi4_african_history", name="eval_phi4_african_history_lora_ds2")
 
 model_id = "microsoft/Phi-4-mini-instruct"
-output_dir = "./phi4_african_history_lora_ds2"
+# output_dir = "./phi4_african_history_lora_ds2"
 repo_id = "DannyAI/eval_phi4_african_history_lora_ds2" # replace with your HF repo  
 
 # Load Data
@@ -50,7 +50,7 @@ model  = AutoModelForCausalLM.from_pretrained(
 
 # load LoRA layers
 lora_model = PeftModel.from_pretrained(
-    model,output_dir
+    model,repo_id
 )
 
 lora_model.eval()

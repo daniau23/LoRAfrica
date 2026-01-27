@@ -57,7 +57,7 @@ Below are the results from this project on the test set data; Kindly refere to t
 |Model| Bert Score|
 |--|--|
 |phi4_baseline|0.88868
-|phi4_african_history_lora|0.90748
+|phi4_african_history_lora|0.90726
 |eval_phi4_african_history_lora_ds2|0.90339
 |eval_axolotl_phi4_african_history_lora|0.88981
 |eval_axolotl_phi4_african_history_lora_ds2|0.88872
