@@ -1,0 +1,63 @@
+base_model: microsoft/Phi-4-mini-instruct
+model_type: AutoModelForCausalLM
+tokenizer_type: AutoTokenizer
+
+# 1. Dataset Configuration
+datasets:
+  - path: DannyAI/African-History-QA-Dataset
+    split: train
+    type: alpaca_chat.load_qa
+    system_prompt: "You are a helpful AI assistant specialised in African history."
+test_datasets:
+  - path: DannyAI/African-History-QA-Dataset
+    split: validation
+    type: alpaca_chat.load_qa
+    system_prompt: "You are a helpful AI assistant specialised in African history."
+
+# 2. Chat Configuration
+chat_template: tokenizer_default
+train_on_inputs: false
+
+# 3. Batch Size Configuration
+micro_batch_size: 2
+gradient_accumulation_steps: 4 # Axolotl will calculate: total_batch_size = 2 * 4 * 1 GPU = 8
+
+# 4. LoRA Configuration
+adapter: lora
+lora_r: 8
+lora_alpha: 16
+lora_dropout: 0.05
+lora_target_modules: [q_proj, v_proj, k_proj, o_proj]
+
+# 5. Hardware & Efficiency
+sequence_len: 2048
+sample_packing: true
+eval_sample_packing: false 
+pad_to_sequence_len: true
+bf16: true
+fp16: false
+
+# 6. Training Duration
+max_steps: 650  
+# removed
+# num_epochs: 
+warmup_steps: 20
+learning_rate: 0.00002
+optimizer: adamw_torch 
+lr_scheduler: cosine
+
+# 7. Logging & DeepSpeed
+deepspeed: using_axolotl/ds_config_2.json 
+wandb_project: phi4_african_history
+wandb_name: phi4_axolotl_stage2
+
+eval_strategy: steps
+eval_steps: 50
+save_strategy: steps
+save_steps: 100
+logging_steps: 5
+
+# 8. Public Hugging Face Hub Upload
+hub_model_id: DannyAI/phi4_african_history_lora_ds2_axolotl
+push_adapter_to_hub: true
+hub_private_repo: false
