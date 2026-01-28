@@ -48,6 +48,7 @@ In the `axolotl` folder;
 
 ### **Results**
 Below are the results from this project on the test set data; Kindly refere to the `img/results_wandb` folder for the results
+
 ![BERT SCORE](img/results_wandb/bert_score.png)
 
 ![TINY MMLU](img/results_wandb//tiny_mmlu.png)
