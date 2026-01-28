@@ -3,7 +3,7 @@
 ![LoRAfrica_Scaling_LLM Fine_Tuning_for_African_History.jpg](img/LoRAfrica_Scaling_LLM%20Fine_Tuning_for_African_History.jpg)
 
 ## **Aim**
-Fine tune Phi-4 Phi-4-mini-instruct model using LoRA on the consolidation data about African History using the QA dataset from [African History Dataset](DannyAI/African-History-QA-Dataset)
+Fine tune Phi-4-mini-instruct model using LoRA on the consolidation data about African History using the QA dataset from [African History Dataset](DannyAI/African-History-QA-Dataset)
 
 ## **Objectives**
 - Fine tune model using LoRA
