@@ -50,9 +50,9 @@ In the `axolotl` folder;
 Below are the results from this project on the test set data; Kindly refere to the `img/results_wandb` folder for the results
 ![BERT SCORE](img/results_wandb/bert_score.png)
 
-![TINY TRUTHFUL QA](img/results_wandb/tiny_truthful_qa.png)
-
 ![TINY MMLU](img/results_wandb//tiny_mmlu.png)
+
+![TINY TRUTHFUL QA](img/results_wandb/tiny_truthful_qa.png)
 
 |Model| Bert Score|
 |--|--|
@@ -62,14 +62,6 @@ Below are the results from this project on the test set data; Kindly refere to t
 |eval_axolotl_phi4_african_history_lora|0.88981
 |eval_axolotl_phi4_african_history_lora_ds2|0.88872
 
-|Model|Tiny TruthfulQA|
-|--|--|
-|phi4_baseline_bench_mark|0.49745
-|phi4_lora_bench_mark|0.43555
-|phi4_african_history_lora_ds2_bench_mark|0.43822
-|phi4_african_history_lora_axolotl_bench_mark|0.46626
-|phi4_african_history_axolotl_deep_speed_2_lora_bench_mark|0.46877
-
 |Model|Tiny MMLU|
 |--|--|
 |phi4_baseline_bench_mark|0.6837
@@ -77,6 +69,14 @@ Below are the results from this project on the test set data; Kindly refere to t
 |phi4_african_history_lora_ds2_bench_mark|0.67788
 |phi4_african_history_lora_axolotl_bench_mark|0.67371
 |phi4_african_history_axolotl_deep_speed_2_lora_bench_mark|0.67371
+
+|Model|Tiny TruthfulQA|
+|--|--|
+|phi4_baseline_bench_mark|0.49745
+|phi4_lora_bench_mark|0.43555
+|phi4_african_history_lora_ds2_bench_mark|0.43822
+|phi4_african_history_lora_axolotl_bench_mark|0.46626
+|phi4_african_history_axolotl_deep_speed_2_lora_bench_mark|0.46877
 
 **Weights and Biases**
 
