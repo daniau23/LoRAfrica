@@ -46,6 +46,8 @@ In the `axolotl` folder;
 - The `eval_axolotl_deep_speed_2_lora.py` is the evaluation file for running for lora with axolotl. Run using `python eval_axolotl_deep_speed_2_lora.py`
 - The `axolotl_deep_speed_2_lora_benchmark.ipynb` is the lora with deep speed benchmark file 
 
+In the `compare_model_answers` folder, the fine-tuned model answers are compared to the base model and reference answers
+
 ### **Results**
 Below are the results from this project on the test set data; Kindly refere to the `img/results_wandb` folder for the results
 
