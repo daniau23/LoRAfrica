@@ -36,7 +36,7 @@ Once `requirements.txt` is installed, navigate to the project `lora` folder.
 ### **Fine tuning and benchmarking with Axolotl**
 First of all, many thanks to the entire team at **[READY TENSOR](https://app.readytensor.ai/)** as they showed me how to fine tune models via yaml files. This aspect of the project may not be perfect but has set the foundation for further research of using axolotl for finetuning models with just yaml files.
 
-To fine tune with Axolotl, you will need to create a new Pod instance with the axolotl environment already installed. Refer to this [video](https://youtu.be/HL0K9IkSd0U?si=vEK5RV7HKDHWPXnn) on how to create the pod instance
+To fine tune with Axolotl, you will need to create a new Pod instance with the [axolotl environment](https://console.runpod.io/hub/template/axolotl-runpod?id=v2ickqhz9s) already installed. Refer to this [video](https://youtu.be/HL0K9IkSd0U?si=vEK5RV7HKDHWPXnn) on how to create the pod instance
 
 In the `axolotl` folder;
 - The `lora.yml` is the file needed to run lora fine-tuning without deep_speed. Run this file using `axolotl train axolotl/lora.yml`
