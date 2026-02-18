@@ -83,7 +83,7 @@ Below are the results from this project on the test set data; Kindly refere to t
 
 **Weights and Biases**
 
-This is the link to the weights and biases [project](https://wandb.ai/dannyai-danny-the-analyst/phi4_african_history) which has all the logs for this project.
+This is the link to the weights and biases [project](https://api.wandb.ai/links/dannyai-danny-the-analyst/mlaiy72i) which has all the logs for this project.
 ### **Model Links**
 - [Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct)
 - [phi4_african_history_lora](https://huggingface.co/DannyAI/phi4_african_history_lora)
