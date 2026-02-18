@@ -102,5 +102,6 @@ This is the link to the weights and biases [project](https://wandb.ai/dannyai-da
 - The fine-tuned models have a better BERT score than the baseline model
 - The fine-tuned models have a small drop in performance in TinyMMLU and TinyTruthfulQA benchmarks results when compared to the baseline model
 
+## **Publication Links**
 - [LinkedIn Post](https://www.linkedin.com/posts/daniel-ihenacho-637467223_llmfinetuningspecialist-activity-7429827076402176000-7BfM?utm_source=share&utm_medium=member_desktop&rcm=ACoAADgheMsBhliqOiWzMQCs2pi9jfojo2pW168)
 - [Publication Article](https://app.readytensor.ai/publications/lorafrica-scaling-llm-fine-tuning-for-african-history-YR6rQNNj78OT)
